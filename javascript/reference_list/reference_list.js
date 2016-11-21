@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     lnk.href = links[i].href
     lnk.innerText = links[i].innerText
     li.appendChild(lnk)
-    li.appendChild(document.createTextNode("] "+links[i].title))
+    li.appendChild(document.createTextNode(
+      "] "+links[i].title+" "+links[i].href))
     list_of_refs.appendChild(li)
   }
   sections = document.body.getElementsByTagName("section")
