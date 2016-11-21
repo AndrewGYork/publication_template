@@ -1,4 +1,4 @@
-# publication-template, a template for writing scientific papers
+# A template for writing scientific papers
 View it in action here:
 https://andrewgyork.github.io/publication-template/
 
