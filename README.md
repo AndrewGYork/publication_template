@@ -1,5 +1,5 @@
-# publication-template
-
+# publication-template, a template for writing scientific papers
+View it in action here:
 https://andrewgyork.github.io/publication-template/
 
 This repository is intended to hold a (mostly) self-contained scientific publication. It contains:
