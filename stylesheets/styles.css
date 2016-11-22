@@ -51,6 +51,11 @@ p.author_list {
 }
 
 p.author_affiliations {
+  margin:0 0 0px;
+  font-style: italic;
+}
+
+p.contact_email {
   font-style: italic;
 }
 
