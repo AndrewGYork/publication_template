@@ -201,6 +201,7 @@ figcaption {
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
+  background:#e7e7e7;
 }
 
 pre {
