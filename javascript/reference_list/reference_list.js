@@ -16,10 +16,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       list_of_refs.appendChild(li)
     }
   }
-  sections = document.body.getElementsByTagName("section")
-  last_section = sections[sections.length - 1]
-  heading = document.createElement("h3")
-  heading.appendChild(document.createTextNode("References"))
-  last_section.appendChild(heading)
-  last_section.appendChild(list_of_refs)
+  if (links.length > 0) {
+    sections = document.body.getElementsByTagName("section")
+    last_section = sections[sections.length - 1]
+    heading = document.createElement("h3")
+    heading.appendChild(document.createTextNode("References"))
+    last_section.appendChild(heading)
+    last_section.appendChild(list_of_refs)
+  }
 });
