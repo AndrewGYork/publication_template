@@ -1,8 +1,8 @@
 // Figure 2 interactively loads static images, stored locally
 function update_figure_2() {
-  var period = document.getElementById("Figure 2 period").value;
+  var period = document.getElementById("Figure_2_period").value;
   var filename = "./images/figure_2/period_" + period + ".svg";
-  var image = document.getElementById("Figure 2 image");
+  var image = document.getElementById("Figure_2_image");
   image.src = filename;
 }
 
@@ -20,8 +20,8 @@ img.onload = function() {
 img.src = big_image_directory + "/figure_3/period_000004.svg"
 
 function update_figure_3() {
-  period = document.getElementById("Figure 3 period").value;
+  period = document.getElementById("Figure_3_period").value;
   filename = big_image_directory + "/figure_3/period_" + period + ".svg";
-  image = document.getElementById("Figure 3 image");
+  image = document.getElementById("Figure_3_image");
   image.src = filename;
 }
