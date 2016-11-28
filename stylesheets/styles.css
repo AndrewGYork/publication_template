@@ -70,7 +70,7 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
-h1,h2, h3 {
+h1, h2, h3 {
   display: block;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
@@ -304,7 +304,7 @@ header ul {
 
 header li {
   list-style-type: none;
-  width:132px;
+  width:135px;
   height:15px;
   margin-bottom: 12px;
   line-height: 1em;
