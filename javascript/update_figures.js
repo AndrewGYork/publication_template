@@ -12,6 +12,11 @@ var big_image_directory = "./../big_images";
 var img = new Image();
 img.onerror = function() {
   window.big_image_directory = "https://andrewgyork.github.io/publication-template-data/big_images";
+  img.onerror = function() {
+    window.big_image_directory = "";
+    img.onerror = "";
+    window.alert("Interactive images not found.");
+  }
   img.src = big_image_directory + "/figure_3/period_000004.svg"
 }
 img.onload = function() {
@@ -20,8 +25,8 @@ img.onload = function() {
 img.src = big_image_directory + "/figure_3/period_000004.svg"
 
 function update_figure_3() {
-  period = document.getElementById("Figure_3_period").value;
-  filename = big_image_directory + "/figure_3/period_" + period + ".svg";
-  image = document.getElementById("Figure_3_image");
+  var period = document.getElementById("Figure_3_period").value;
+  var filename = big_image_directory + "/figure_3/period_" + period + ".svg";
+  var image = document.getElementById("Figure_3_image");
   image.src = filename;
 }
