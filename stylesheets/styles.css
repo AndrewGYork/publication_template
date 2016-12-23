@@ -88,9 +88,14 @@ h3 {
   font-size: 18px;
 }
 
-h4, h5, h6 {
+h4, h5 {
   font-family: Arvo, Monaco, serif;
   font-weight: 700;
+}
+
+h6 {
+  font-family: Arvo, Monaco, serif;
+  font-weight: 200;
 }
 
 a {
@@ -202,6 +207,7 @@ code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
   background:#e7e7e7;
+  font-size: 12px;
 }
 
 pre {
