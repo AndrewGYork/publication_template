@@ -459,3 +459,8 @@ footer {
     color:#444;
   }
 }
+
+.onlyprint {display: none;}
+@media print {
+  .onlyprint {display: block;}
+}
