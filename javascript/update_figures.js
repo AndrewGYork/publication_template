@@ -11,7 +11,7 @@ function update_figure_2() {
 var big_image_directory = "./../big_images";
 var img = new Image();
 img.onerror = function() {
-  window.big_image_directory = "https://andrewgyork.github.io/publication-template-data/big_images";
+  window.big_image_directory = "https://andrewgyork.github.io/publication_template_data/big_images";
   img.onerror = function() {
     window.big_image_directory = "";
     img.onerror = "";

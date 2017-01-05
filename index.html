@@ -12,7 +12,7 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
     <base target="_blank">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Publication-template by AndrewGYork</title>
+    <title>Publication_template by AndrewGYork</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/prism.css">
@@ -33,8 +33,8 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
         <p class="header"></p>
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/publication-template/zipball/master">Download ZIP</a></li>
-          <li><a class="buttons github" href="https://github.com/AndrewGYork/publication-template">View On GitHub</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/publication_template/zipball/master">Download ZIP</a></li>
+          <li><a class="buttons github" href="https://github.com/AndrewGYork/publication_template">View On GitHub</a></li>
         </ul>
 
         <p class="header">This project is maintained by <a class="header name" href="https://github.com/AndrewGYork">AndrewGYork</a></p>
@@ -66,14 +66,14 @@ Version control tools like <a href="https://git-scm.com/">Git</a>, <a href="http
 <li><strong>Archive for posterity.</strong> I want my work to exist after I die, in an open, available and <a href="https://guides.github.com/activities/citable-code/">citable</a> form. Github, Github Pages, and <a href="https://zenodo.org/">Zenodo</a> address these problems cleanly (although there's room for improvement).</li>
 </ul>
 
-<p>I've been careful about dependencies; Git and Github are helpful, but not required. You can download a <a href="https://github.com/AndrewGYork/publication-template/zipball/master"><code>.zip</code> of this repository</a>, edit <code>index.html</code> with a text editor, and view the results with a web browser. I avoid Javascript which loads via the web, so you can work offline. My figure generation code depends on the <a href="https://www.scipy.org/stackspec.html">Scipy stack</a>, but this is easy to swap out.</p>
+<p>I've been careful about dependencies; Git and Github are helpful, but not required. You can download a <a href="https://github.com/AndrewGYork/publication_template/zipball/master"><code>.zip</code> of this repository</a>, edit <code>index.html</code> with a text editor, and view the results with a web browser. I avoid Javascript which loads via the web, so you can work offline. My figure generation code depends on the <a href="https://www.scipy.org/stackspec.html">Scipy stack</a>, but this is easy to swap out; all you have to do is generate static images, put them in the proper folder, and link to them from <code>index.html</code>. You can generate your static images using any tool you choose. If you happen to use code to generate your figures, though, great! You can put this code in the <code>figure_generation</code> directory, enabling version control and simple reproduction of your results by others.</p>
 
 <p>Writing directly in HTML/CSS/Javascript isn't for everyone. It's fiddly, has a learning curve, and requires obsessive attention to detail. In my experience, writing a scientific publication already fits this description, so it's a small price to pay, and one I'm already paying.</p>
 
 <h3>
 Math typesetting</h3>
 
-<p>I use MathJax for typesetting. I want to be able to work offline, but a local MathJax copy is huge, so I followed the recipe described by <a href="https://tiborsimon.io/blog/web/minimal-mathjax-package/">Tibor Simon</a> to make a minimal version. The recipe's pretty cool; you delete most of MathJax, try to load it, watch your browser console, and copy files back one at a time until your browser stops complaining. I only support LaTex input; follow Tibor's recipe and replace the contents of <code>/javascript/Minimal-MathJax/</code> if you want more.</p>
+<p>I use MathJax for typesetting. I want to be able to work offline, but a local MathJax copy is huge, so I followed the recipe described by <a href="https://tiborsimon.io/articles/web/minimal-mathjax/">Tibor Simon</a> to make a minimal version. The recipe's pretty cool; you delete most of MathJax, try to load it, watch your browser console, and copy files back one at a time until your browser stops complaining. I only support LaTex input; if you want more, you can follow Tibor's recipe and replace the contents of <code>/javascript/Minimal-MathJax/</code>.</p>
 
 <p>Examples of paragraph equations:</p>
 <div>
@@ -99,9 +99,11 @@ print("Whee!")
 <h3>
 Automatic reference list</h3>
 
-<p>An example of how to include a citation [<a class="citation" href="http://dx.doi.org/10.1371/journal.pgen.1004526" title="Asymmetric division and differential gene expression during a bacterial developmental program requires DivIVA
-P Eswaramoorthy, PW Winter, P Wawrzusin, AG York, H Shroff, ...
-PLoS Genet 10 (8), e1004526">Eswaramoorthy2014</a>]. If you inspect the HTML, you'll see that inserting the citation is super clumsy, but at least you don't have to keep track of uniqueness, ordering, etc.</p>
+<p>An example of how to include a citation:
+
+[<a class="citation" href="http://dx.doi.org/10.1371/journal.pgen.1004526" title="Asymmetric Division and Differential Gene Expression during a Bacterial Developmental Program Requires DivIVA; Prahathees Eswaramoorthy, Peter W. Winter, Peter Wawrzusin, Andrew G. York, Hari Shroff, Kumaran S. Ramamurthi; PLoS Genet 10 (8), e1004526">Eswaramoorthy2014</a>].
+
+If you inspect the HTML, you'll see that inserting the citation is super clumsy, but at least you don't have to keep track of uniqueness, ordering, etc.</p>
 
 <h3>
 Static and interactive figures</h3>

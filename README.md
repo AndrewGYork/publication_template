@@ -1,6 +1,6 @@
 # A template for writing scientific papers
 View it in action here:
-https://andrewgyork.github.io/publication-template/
+https://andrewgyork.github.io/publication_template/
 
 This repository is intended to hold a (mostly) self-contained scientific publication. It contains:
 
@@ -9,6 +9,8 @@ This repository is intended to hold a (mostly) self-contained scientific publica
 
 Some files aren't suitable for version control, (e.g. raw data, large numbers of pre-rendered figure images, etc). These are stored in a sister repository:
 
-https://github.com/AndrewGYork/publication-template-data
+https://github.com/AndrewGYork/publication_template_data
 
 Hopefully this makes it easier to nuke the version control history for big, non-text files without risking the small, important text-based files stored here.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
