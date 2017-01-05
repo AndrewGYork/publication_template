@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   list_of_refs = document.createElement("ol");
   var links = document.getElementsByClassName("citation");
   for(var i = 0; i < links.length; i++){
-    if (!(already_included.includes(links[i].innerText))) {
+    if (!(already_included.indexOf(links[i].innerText) >= 0)) {
       already_included = already_included.concat(links[i].innerText);
       li = document.createElement("li");
       li.appendChild(document.createTextNode("["));
