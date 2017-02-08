@@ -351,6 +351,10 @@ a.github {
   background: url(../images/octocat-small.png) no-repeat 1px;
 }
 
+a.pdf {
+  background: url(../images/pdf.png) no-repeat 1px;
+}
+
 a.buttons:hover {
   color: #fff;
   text-decoration: none;
