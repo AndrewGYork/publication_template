@@ -8,6 +8,6 @@ You should also delete or modify the `google-analytics/analytics.js` script, sin
 
 `html5shiv/html5shiv.js` is from [HTML5 boilerplate](https://html5boilerplate.com/). As I understand it, this file helps make HTML5 work with old versions of IE, but I haven't tested this extensively.
 
-`python-highlighting/prism.js` is from [prismjs.com/](http://prismjs.com/); the version I included allows python sytnax highlighting for code inside <pre><code> tags. If someone wanted syntax highlighting for another language, they should replace `prism.js` with a fresh copy downloaded from `prismjs.com`
+`python-highlighting/prism.js` is from [prismjs.com/](http://prismjs.com/); the version I included allows python sytnax highlighting for code inside &ltpre>&ltcode> tags. If someone wanted syntax highlighting for another language, they should replace `prism.js` with a fresh copy downloaded from `prismjs.com`
 
 `Minimal-MathJax/` is to allow math typesetting, which I imagine many template users would want.
