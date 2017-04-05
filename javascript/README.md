@@ -1,13 +1,18 @@
-`update_figures.js` is specific code, hand-written to animate the figures in this particular publication. If you copy this publication as a template, you'll have to rewrite this file yourself (or just use static figures).
+# A template for writing scientific papers
+<a href="https://doi.org/10.5281/zenodo.231328"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.231328.svg" alt="DOI"></a>
 
-You should also delete or modify the `google-analytics/analytics.js` script, since the tracking code is specific to me.
+View it in action here:
+https://andrewgyork.github.io/publication_template/
 
-`reference_list/reference_list.js` is more general code; it's intended to search the document for citations formatted in a particular way, and append a (not too ugly) list of references to the end of the document. It's intended to stay the same every time the template is used, unless the user wants to do their reference list a different way.
+This repository is intended to hold a (mostly) self-contained scientific publication. It contains:
 
-`scale-fix/scale-fix.js` came with the template that I based my work on, ['dinky' by 'broccolini'](https://github.com/broccolini/dinky). I believe it helps the document scale correctly for different size screens. It's possible that it's not doing anything, and it's just cruft, but I haven't taken the time to understand. Incidentally, 'broccolini' mentioned in their original work that 'attribution is not necessary but it is appreciated', so I put an attribution in a comment in index.html; if you copy this publication as a template, I'd appreciate it if this attribution remains.
+* HTML, javascript, and small images (index.html, and in the javascript and images directories)
+* Code which produces figures (in the `figure_code` directory)
 
-`html5shiv/html5shiv.js` is from [HTML5 boilerplate](https://html5boilerplate.com/). As I understand it, this file helps make HTML5 work with old versions of IE, but I haven't tested this extensively.
+Some files aren't suitable for version control, (e.g. raw data, large numbers of pre-rendered figure images, etc). These are stored in a sister repository:
 
-`python-highlighting/prism.js` is from [prismjs.com/](http://prismjs.com/); the version I included allows python sytnax highlighting for code inside &ltpre>&ltcode> tags. If someone wanted syntax highlighting for another language, they should replace `prism.js` with a fresh copy downloaded from `prismjs.com`
+https://github.com/AndrewGYork/publication_template_data
 
-`Minimal-MathJax/` is to allow math typesetting, which I imagine many template users would want.
+Hopefully this makes it easier to nuke the version control history for big, non-text files without risking the small, important text-based files stored here.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
