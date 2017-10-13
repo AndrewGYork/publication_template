@@ -56,6 +56,7 @@ p.author_affiliations {
 }
 
 p.contact_email {
+  margin:0 0 0px;
   font-style: italic;
 }
 
