@@ -56,7 +56,6 @@ p.author_affiliations {
 }
 
 p.contact_email {
-  margin:0 0 0px;
   font-style: italic;
 }
 
@@ -89,9 +88,14 @@ h3 {
   font-size: 18px;
 }
 
-h4, h5, h6 {
+h4, h5 {
   font-family: Arvo, Monaco, serif;
   font-weight: 700;
+}
+
+h6 {
+  font-family: Arvo, Monaco, serif;
+  font-weight: 200;
 }
 
 a {
@@ -203,6 +207,7 @@ code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
   background:#e7e7e7;
+  font-size: 12px;
 }
 
 pre {
@@ -346,6 +351,10 @@ a.github {
   background: url(../images/octocat-small.png) no-repeat 1px;
 }
 
+a.pdf {
+  background: url(../images/pdf.png) no-repeat 1px;
+}
+
 a.buttons:hover {
   color: #fff;
   text-decoration: none;
@@ -453,4 +462,9 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.onlyprint {display: none;}
+@media print {
+  .onlyprint {display: block;}
 }
